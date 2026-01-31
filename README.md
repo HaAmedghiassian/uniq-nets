@@ -27,7 +27,7 @@ Deep Neural Networks, Physics of Learning, Chaotic Dynamics, Information Theory,
 To replicate the theoretical and experimental results:  
 
 ```bash
-git clone https://github.com/yourusername/uniq-nets.git
+git clone https://github.com/HaAmedghiassian/uniq-nets.git
 cd uniq-nets
 conda env create -f environment.yml
 conda activate uniq-nets
@@ -157,9 +157,9 @@ If you use this work, please cite:
 @article{ghiassian2026uniqueness,
   title={Uniqueness in Deep Neural Networks: The Inevitable Singularity of Learning Trajectories},
   author={Ghiassian, Haamed},
-  journal={arXiv preprint},
+  journal={zenodo preprint},
   year={2026},
-  url={https://github.com/yourusername/uniq-nets}
+  url={https://github.com/HaAmedghiassian/uniq-nets}
 }
 ```
 
