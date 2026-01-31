@@ -171,3 +171,4 @@ MIT License. See LICENSE file for details.
 
 For questions or discussions, please open an issue on GitHub or contact the author directly.
 ```
+haamedghiasian@gmail.com
