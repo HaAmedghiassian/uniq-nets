@@ -63,10 +63,14 @@ uniq-nets/
 │   ├── 📁 02_entropy/          # Entropy production experiments
 │   └── 📁 03_topology/         # Topological data analysis
 │
-├── 📂 figures/                  # High-quality figures from paper
-│   ├── figure_1.png
-│   ├── figure_2.pdf
-│   └── ...
+├── 📂 assets/                   # All non-code resources
+│   ├── 📁 figures/             # Paper figures (high-quality)
+│   │   ├── figure_1.png
+│   │   ├── figure_2.pdf
+│   │   └── ...
+│   ├── 📁 diagrams/            # Supplementary schematic diagrams
+│   ├── 📁 data_samples/        # Example datasets for demonstration
+│   └── 📁 media/               # Videos and other multimedia content
 │
 └── 📜 environment.yml          # Conda environment for reproducibility
 ```
