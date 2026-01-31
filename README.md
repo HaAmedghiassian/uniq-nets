@@ -2,7 +2,7 @@
 *The Inevitable Singularity of Learning Trajectories*  
 
 ## 📄 Paper  
-**[Full Preprint](./uniqueness_preprint.pdf)**  
+**[Full Preprint](./Uniqueness_in_Deep_Neural_Networks__The_Inevitable_Singularity_of_Learning_Trajectories.pdf)**  
 
 ## 🧠 Abstract  
 This repository accompanies the paper **"Uniqueness in Deep Neural Networks: The Inevitable Singularity of Learning Trajectories"** by Haamed Ghiassian.  
