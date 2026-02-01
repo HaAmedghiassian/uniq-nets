@@ -33,7 +33,6 @@ dependencies:
   - kaleido=0.2.1
   
   # Notebook & Interactive
-  - jupyter=1.0.0
   - jupyterlab=4.0.11
   - jupyter-contrib-nbextensions
   - ipywidgets=8.1.1
