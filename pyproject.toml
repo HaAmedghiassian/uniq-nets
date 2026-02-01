@@ -1,3 +1,7 @@
+# =============================================
+# MINIMAL VERSION FOR PyPI NAME RESERVATION (v0.0.1)
+# This is the executable version for PyPI publishing
+# =============================================
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
@@ -14,15 +18,10 @@ license = {text = "MIT"}
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Science/Research",
-    "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
-    "Topic :: Scientific/Engineering :: Mathematics",
-    "Topic :: Scientific/Engineering :: Physics",
     "Operating System :: OS Independent",
 ]
 
@@ -30,70 +29,114 @@ dependencies = [
     "numpy>=1.24",
     "scipy>=1.12",
     "matplotlib>=3.8",
-    "pandas>=2.2",
-    "tqdm>=4.66",
-    "jupyterlab>=4.0",
-    "torch>=2.2.0",
-    "torchvision>=0.17.0",
-]
-
-[project.optional-dependencies]
-lyapunov = [
-    "chaospy>=4.4",
-    "filterpy>=1.4",
-    "plotly>=5.18",
-    "kaleido>=0.2",
-    "numba>=0.59",
-    "tsfresh>=0.20",
-]
-
-entropy = [
-    "dit>=1.3",
-    "pyitlib>=0.2",
-    "scikit-learn>=1.4",
-]
-
-topology = [
-    "gudhi>=3.9",
-    "ripser>=0.6",
-    "persim>=0.3",
-    "scikit-tda>=0.1",
-]
-
-dev = [
-    "black>=24.1",
-    "flake8>=7.0",
-    "pytest>=7.4",
-    "pytest-cov>=4.1",
-    "pre-commit>=3.6",
-    "ipdb>=0.13",
-    "memory-profiler>=0.61",
-    "line-profiler>=4.1",
-]
-
-docs = [
-    "sphinx>=7.2",
-    "myst-parser>=2.0",
-    "sphinx-rtd-theme>=2.0",
-    "nbsphinx>=0.9",
 ]
 
 [project.urls]
 Homepage = "https://github.com/HaAmedghiassian/uniq-nets"
 Repository = "https://github.com/HaAmedghiassian/uniq-nets.git"
-Issues = "https://github.com/HaAmedghiassian/uniq-nets/issues"
 
 [tool.setuptools]
 packages = ["uniq_nets"]
 
-[tool.black]
-line-length = 88
-target-version = ['py310']
-
-[tool.flake8]
-max-line-length = 88
-extend-ignore = ["E203", "W503"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-addopts = "-v --cov=uniq_nets --cov-report=html"
+# =============================================
+# ORIGINAL FULL VERSION (COMMENTED OUT)
+# =============================================
+# [build-system]
+# requires = ["setuptools>=61.0", "wheel"]
+# build-backend = "setuptools.build_meta"
+# 
+# [project]
+# name = "uniq-nets"
+# version = "0.0.1"
+# description = "Uniqueness in Deep Neural Networks: The Inevitable Singularity of Learning Trajectories (Initial Release)"
+# readme = "README.md"
+# authors = [
+#     {name = "Haamed Ghiassian", email = "haamed.ghiassian@gmail.com"}
+# ]
+# license = {text = "MIT"}
+# classifiers = [
+#     "Development Status :: 2 - Pre-Alpha",
+#     "Intended Audience :: Science/Research",
+#     "Intended Audience :: Developers",
+#     "License :: OSI Approved :: MIT License",
+#     "Programming Language :: Python :: 3",
+#     "Programming Language :: Python :: 3.10",
+#     "Programming Language :: Python :: 3.11",
+#     "Programming Language :: Python :: 3.12",
+#     "Topic :: Scientific/Engineering :: Artificial Intelligence",
+#     "Topic :: Scientific/Engineering :: Mathematics",
+#     "Topic :: Scientific/Engineering :: Physics",
+#     "Operating System :: OS Independent",
+# ]
+# 
+# dependencies = [
+#     "numpy>=1.24",
+#     "scipy>=1.12",
+#     "matplotlib>=3.8",
+#     "pandas>=2.2",
+#     "tqdm>=4.66",
+#     "jupyterlab>=4.0",
+#     "torch>=2.2.0",
+#     "torchvision>=0.17.0",
+# ]
+# 
+# [project.optional-dependencies]
+# lyapunov = [
+#     "chaospy>=4.4",
+#     "filterpy>=1.4",
+#     "plotly>=5.18",
+#     "kaleido>=0.2",
+#     "numba>=0.59",
+#     "tsfresh>=0.20",
+# ]
+# 
+# entropy = [
+#     "dit>=1.3",
+#     "pyitlib>=0.2",
+#     "scikit-learn>=1.4",
+# ]
+# 
+# topology = [
+#     "gudhi>=3.9",
+#     "ripser>=0.6",
+#     "persim>=0.3",
+#     "scikit-tda>=0.1",
+# ]
+# 
+# dev = [
+#     "black>=24.1",
+#     "flake8>=7.0",
+#     "pytest>=7.4",
+#     "pytest-cov>=4.1",
+#     "pre-commit>=3.6",
+#     "ipdb>=0.13",
+#     "memory-profiler>=0.61",
+#     "line-profiler>=4.1",
+# ]
+# 
+# docs = [
+#     "sphinx>=7.2",
+#     "myst-parser>=2.0",
+#     "sphinx-rtd-theme>=2.0",
+#     "nbsphinx>=0.9",
+# ]
+# 
+# [project.urls]
+# Homepage = "https://github.com/HaAmedghiassian/uniq-nets"
+# Repository = "https://github.com/HaAmedghiassian/uniq-nets.git"
+# Issues = "https://github.com/HaAmedghiassian/uniq-nets/issues"
+# 
+# [tool.setuptools]
+# packages = ["uniq_nets"]
+# 
+# [tool.black]
+# line-length = 88
+# target-version = ['py310']
+# 
+# [tool.flake8]
+# max-line-length = 88
+# extend-ignore = ["E203", "W503"]
+# 
+# [tool.pytest.ini_options]
+# testpaths = ["tests"]
+# addopts = "-v --cov=uniq_nets --cov-report=html"
