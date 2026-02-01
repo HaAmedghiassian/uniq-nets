@@ -34,12 +34,60 @@ conda activate uniq-nets
 python -m experiments.01_lyapunov.simulate --config experiments/01_lyapunov/config.yaml
 ```
 
+## 📦 PyPI Installation
+
+The package is available on PyPI for easy installation:
+
+```bash
+# Install minimal version (CPU)
+pip install uniq-nets
+
+# Or install with Theorem 1 dependencies
+pip install "uniq-nets[lyapunov]"
+
+# For development (testing, formatting, etc.)
+pip install "uniq-nets[dev]"
+
+# Install in development mode from source
+git clone https://github.com/HaAmedghiassian/uniq-nets.git
+cd uniq-nets
+pip install -e .
+```
+
+**Note on PyTorch version:**  
+The default installation uses PyTorch CPU. For GPU support, install PyTorch separately:
+```bash
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+```
+
+**Version 0.0.1** is an initial release for name reservation and project setup.  
+Full functionality (Theorems 1-3 implementations) will be available in version 0.1.0.
+
+## 🎯 Quick Start Example
+
+```python
+import uniq_nets
+
+# Check version
+print(f"Using uniq-nets v{uniq_nets.__version__}")
+
+# The package is under active development
+# Full functionality coming in future releases
+```
+
 ## Repository Structure
 
 ```
 uniq-nets/
 ├── 📜 README.md                 # This file
-├── 📄 uniqueness_preprint.pdf   # Main paper (PDF)
+├── 📄 Uniqueness_in_Deep_Neural_Networks__The_Inevitable_Singularity_of_Learning_Trajectories.pdf   # Main paper (PDF)
+├── 📜 pyproject.toml            # Project configuration and dependencies
+├── 📜 requirements-minimal.txt  # Minimal pip requirements for quick install
+├── 📜 environment.yml           # Conda environment for reproducibility
+├── 📜 LICENSE                   # MIT License
+│
+├── 📂 uniq_nets/                # Main Python package
+│   └── 📜 __init__.py           # Package initialization and metadata
 │
 ├── 📂 theory/                   # Theoretical foundations
 │   ├── 📁 theorem_1_dynamical/  # Theorem 1: Chaotic Divergence
@@ -63,16 +111,14 @@ uniq-nets/
 │   ├── 📁 02_entropy/          # Entropy production experiments
 │   └── 📁 03_topology/         # Topological data analysis
 │
-├── 📂 assets/                   # All non-code resources
-│   ├── 📁 figures/             # Paper figures (high-quality)
-│   │   ├── figure_1.png
-│   │   ├── figure_2.pdf
-│   │   └── ...
-│   ├── 📁 diagrams/            # Supplementary schematic diagrams
-│   ├── 📁 data_samples/        # Example datasets for demonstration
-│   └── 📁 media/               # Videos and other multimedia content
-│
-└── 📜 environment.yml          # Conda environment for reproducibility
+└── 📂 assets/                   # All non-code resources
+    ├── 📁 figures/             # Paper figures (high-quality)
+    │   ├── figure_1.png
+    │   ├── figure_2.pdf
+    │   └── ...
+    ├── 📁 diagrams/            # Supplementary schematic diagrams
+    ├── 📁 data_samples/        # Example datasets for demonstration
+    └── 📁 media/               # Videos and other multimedia content
 ```
 
 ## Installation
@@ -172,3 +218,4 @@ MIT License. See LICENSE file for details.
 For questions or discussions, please open an issue on GitHub or contact the author directly.
 ```
 haamedghiasian@gmail.com
+```
