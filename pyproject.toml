@@ -4,15 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "uniq-nets"
-version = "0.1.0"
-description = "Uniqueness in Deep Neural Networks: The Inevitable Singularity of Learning Trajectories"
+version = "0.0.1"
+description = "Uniqueness in Deep Neural Networks: The Inevitable Singularity of Learning Trajectories (Initial Release)"
 readme = "README.md"
 authors = [
     {name = "Haamed Ghiassian", email = "haamed.ghiassian@gmail.com"}
 ]
 license = {text = "MIT"}
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Science/Research",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
@@ -20,7 +20,6 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Topic :: Scientific/Engineering :: Mathematics",
     "Topic :: Scientific/Engineering :: Physics",
@@ -34,6 +33,8 @@ dependencies = [
     "pandas>=2.2",
     "tqdm>=4.66",
     "jupyterlab>=4.0",
+    "torch>=2.2.0",
+    "torchvision>=0.17.0",
 ]
 
 [project.optional-dependencies]
@@ -75,12 +76,6 @@ docs = [
     "myst-parser>=2.0",
     "sphinx-rtd-theme>=2.0",
     "nbsphinx>=0.9",
-]
-
-gpu = [
-    "torch>=2.2.0",
-    "torchvision>=0.17.0",
-    "torchaudio>=2.2.0",
 ]
 
 [project.urls]
