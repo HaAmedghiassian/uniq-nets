@@ -1,28 +1,39 @@
-# Minimal requirements for uniq-nets v0.0.1
-# For quick installation and testing
-
-# Install main package in development mode
--e .
-
-# Core deep learning (CPU version by default)
---extra-index-url https://download.pytorch.org/whl/cpu
-torch>=2.2.0
-torchvision>=0.17.0
-
-# Essential scientific computing
+# =============================================
+# MINIMAL VERSION FOR PyPI NAME RESERVATION (v0.0.1)
+# This is the executable version for PyPI publishing
+# =============================================
 numpy>=1.24.0
 scipy>=1.12.0
 matplotlib>=3.8.0
 
-# Progress tracking
-tqdm>=4.66.0
-
-# Note: This is a minimal installation for the initial release (v0.0.1)
-# For Theorem 1 analysis (Lyapunov exponents), install:
-#   pip install "uniq-nets[lyapunov]"
-#
-# For GPU support, install PyTorch with CUDA separately:
-#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
-#
-# For full development environment:
-#   pip install "uniq-nets[dev]"
+# =============================================
+# ORIGINAL FULL VERSION (COMMENTED OUT)
+# =============================================
+# # Minimal requirements for uniq-nets v0.0.1
+# # For quick installation and testing
+# 
+# # Install main package in development mode
+# -e .
+# 
+# # Core deep learning (CPU version by default)
+# --extra-index-url https://download.pytorch.org/whl/cpu
+# torch>=2.2.0
+# torchvision>=0.17.0
+# 
+# # Essential scientific computing
+# numpy>=1.24.0
+# scipy>=1.12.0
+# matplotlib>=3.8.0
+# 
+# # Progress tracking
+# tqdm>=4.66.0
+# 
+# # Note: This is a minimal installation for the initial release (v0.0.1)
+# # For Theorem 1 analysis (Lyapunov exponents), install:
+# #   pip install "uniq-nets[lyapunov]"
+# #
+# # For GPU support, install PyTorch with CUDA separately:
+# #   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+# #
+# # For full development environment:
+# #   pip install "uniq-nets[dev]"
